@@ -7,7 +7,7 @@ html, body {
     background: url("../img/reception_flathotel_backdrop_right.png") no-repeat bottom right, linear-gradient(0deg, rgba(74,101,255,1) 8%, rgba(86,168,185,1) 100%);
 }
 
-input:focus, textarea:focus, select:focus{
+input:focus, textarea:focus, select:focus {
     outline: none;
 }
 
