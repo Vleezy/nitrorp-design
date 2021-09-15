@@ -8,7 +8,20 @@ html, body {
 }
 
 input:focus, textarea:focus, select:focus {
+    
+}
+
+input[type="text"], input[type="password"], textarea {
     outline: none;
+    box-shadow:none !important;
+}
+
+.form-control.is-invalid {
+    border: 1px solid red !important;
+}
+
+.form-control.is-valid {
+    border: 1px solid #198754 !important;
 }
 
 a {
