@@ -56,7 +56,7 @@ a {
     border-color: #00917C;
 }
 
-.btn-success:hover {
+.btn-success:hover, .btn-success:focus {
     background: #00917C;
     border-color: #00917C;
 }

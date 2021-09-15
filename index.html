@@ -75,6 +75,10 @@
                 <div class="input-group has-validation mb-3">
                     <span class="input-group-text" id="inputGroupPrepend3"><i class="fas fa-user"></i></span>
                     <input type="text" class="form-control" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <div class="col-12">
+                        <small id="usernameHelp" class="form-text text-muted">Your unique name that gets displayed throughout the hotel.</small>
+                    </div>
+                    
                     <div id="validationServerUsernameFeedback" class="invalid-feedback">
                       User is already given.
                     </div>
@@ -85,6 +89,10 @@
                     <input type="password" class="form-control" id="validationServerPassword" placeholder="Password" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
                     <div id="validationServerPasswordFeedback" class="invalid-feedback">
                       Invalid password.
+                    </div>
+
+                    <div class="col-12">
+                        <small id="passwordHelp" class="form-text text-muted">Your password should be at least 8 characters long.</small>
                     </div>
                   </div>
 
@@ -123,7 +131,7 @@
     
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    
     <script>
         $(document).on('click', '#goToRegister', function () {
             if ($('#login').is(':visible')) {
