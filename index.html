@@ -24,22 +24,25 @@
             <div class="col contentBox" style="max-width: 500px;">
                 <img src="web/img/icons/online.gif" />
                 <div class="title mb-3">Login to NitroRP</div>
-
                 <div class="input-group has-validation mb-3">
                     <span class="input-group-text" id="inputGroupPrepend3"><i class="fas fa-user"></i></span>
-                    <input type="text" class="form-control is-valid" id="validationServerUsername" placeholder="Username" value="Nero" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                      Invalid username.
+                    <input type="text" class="form-control is-valid" id="validationServerUsername"
+                        placeholder="Username" value="Nero"
+                        aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <div id="validationServerUsernameFeedbackText" class="invalid-feedback">
+                        Invalid username.
                     </div>
-                  </div>
+                </div>
 
                 <div class="input-group has-validation mb-3">
                     <span class="input-group-text" id="inputGroupPrepend3"><i class="fas fa-lock"></i></span>
-                    <input type="password" class="form-control is-invalid" id="validationServerPassword" placeholder="Password" value="*******" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                    <div id="validationServerPasswordFeedback" class="invalid-feedback">
-                      Invalid password.
+                    <input type="password" class="form-control is-invalid" id="validationServerPassword"
+                        placeholder="Password" value="*******"
+                        aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback" required>
+                    <div id="validationServerPasswordFeedbackText" class="invalid-feedback">
+                        Invalid password.
                     </div>
-                  </div>
+                </div>
 
                 <div class="row justify-content-between mb-3">
                     <div class="col">
@@ -62,7 +65,6 @@
                         <a href="#"><i class="fab fa-discord fa-2x" style="color: #7289DA;"></i></a>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -74,34 +76,43 @@
                 <div class="title mb-3">Register to NitroRP</div>
                 <div class="input-group has-validation mb-3">
                     <span class="input-group-text" id="inputGroupPrepend3"><i class="fas fa-user"></i></span>
-                    <input type="text" class="form-control" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <input type="text" class="form-control" id="validationServerUsername" placeholder="Username"
+                        aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
                     <div class="col-12">
-                        <small id="usernameHelp" class="form-text text-muted">Your unique name that gets displayed throughout the hotel.</small>
+                        <small id="usernameHelp" class="form-text text-muted">Your unique name that gets displayed
+                            throughout the hotel.</small>
                     </div>
-                    
+
                     <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                      User is already given.
+                        User is already given.
                     </div>
-                  </div>
+                </div>
 
                 <div class="input-group has-validation mb-3">
                     <span class="input-group-text" id="inputGroupPrepend3"><i class="fas fa-lock"></i></span>
-                    <input type="password" class="form-control" id="validationServerPassword" placeholder="Password" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                    <div id="validationServerPasswordFeedback" class="invalid-feedback">
-                      Invalid password.
+                    <input type="password" class="form-control" id="validationServerPassword" placeholder="Password"
+                        aria-describedby="inputGroupPrepend3 validationServerPasswordFeedback" required>
+                    <div id="validationServerPasswordFeedbackText" class="invalid-feedback">
+                        Invalid password.
                     </div>
 
                     <div class="col-12">
-                        <small id="passwordHelp" class="form-text text-muted">Your password should be at least 8 characters long.</small>
+                        <small id="passwordHelp" class="form-text text-muted">Your password should be at least 8
+                            characters long.</small>
                     </div>
-                  </div>
+                </div>
 
                 <div class="form-floating mb-3">
-                    <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                        <option selected><img src="web/img/icons/boy.gif">Male</option>
-                        <option value="1"><img src="web/img/icons/girl.gif">Female</option>
-                        <option value="2"><img src="web/img/icons/girl.gif">Other</option>
+                    <select class="form-select" id="floatingSelectGrid validationServerRegisterGender"
+                        aria-label="Floating label select example">
+                        <option selected>Click here</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
                     </select>
+                    <div id="validationServerRegisterGenderFeedbackText" class="invalid-feedback">
+                        Please choose either male, female or other.
+                    </div>
                     <label for="floatingSelectGrid">Choose your gender</label>
                 </div>
 
@@ -122,16 +133,18 @@
                         <a href="#"><i class="fab fa-discord fa-2x" style="color: #7289DA;"></i></a>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
     <!-- Separate Popper and Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <script>
         $(document).on('click', '#goToRegister', function () {
             if ($('#login').is(':visible')) {
